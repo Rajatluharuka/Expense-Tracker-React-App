@@ -40,14 +40,10 @@ const App = () => {
     });
   };
 
-  const updateExpenseHandler = (expense) => {
-    setExpenses(expense);
-  };
-
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses} onUpdateExpense={updateExpenseHandler} />
+      <Expenses items={expenses} />
     </div>
   );
 };
